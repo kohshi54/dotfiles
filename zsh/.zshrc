@@ -167,3 +167,7 @@ fi
 
 # do not share history among zsh terminal
 unsetopt share_history
+
+# git commit with vim
+export GIT_EDITOR=vim
+
