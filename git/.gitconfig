@@ -1,0 +1,14 @@
+[user]
+	name = kohshi54
+	email = kohshi54.yam@gmail.com
+
+# activate nvim -d for git mergetool to resolve merge conflict
+[merge]
+	tool = "nvim"
+
+[mergetool]
+	keepBackup = false
+	prompt = false
+
+[mergetool "nvim"]
+	cmd = "nvim -d -c \"wincmd l\" -c \"norm ]c\" \"$LOCAL\" \"$MERGED\" \"$REMOTE\""
