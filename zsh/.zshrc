@@ -93,7 +93,9 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/Users/kohshi54/Library/Python/3.9/bin:$PATH"
 
 # add for llvm
-export PATH="$(brew --prefix)/opt/llvm/bin:$PATH"
+if [ "$(uname)" = "Darwin" ]; then
+  export PATH="$(brew --prefix)/opt/llvm/bin:$PATH"
+fi
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -153,7 +155,12 @@ export LC_ALL="en_US.UTF-8"
 # silence beep
 setopt no_beep
 
-source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+if [ "$(uname)" = "Darwin" ]; then
+  source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+fi
+if [ "$(uname)" = "Linux" ]; then
+  source ~/powerlevel10k/powerlevel10k.zsh-theme
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
