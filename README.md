@@ -7,7 +7,7 @@ chmod +x install.sh
 ./install.sh
 ```
 
-## To Uninstall
+## To uninstall
 ```
 chmod +x uninstall.sh
 ./uninstall.sh
