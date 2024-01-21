@@ -12,3 +12,5 @@ chmod +x install.sh
 chmod +x uninstall.sh
 ./uninstall.sh
 ```
+## Requirement
+GNU stow is required.
