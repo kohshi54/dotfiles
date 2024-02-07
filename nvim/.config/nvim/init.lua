@@ -680,8 +680,8 @@ vim.opt.langmenu = "en_US.UTF-8"
 vim.api.nvim_command("language en_US.UTF-8")
 
 -- set tabsize
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
+vim.opt.tabstop = 8
+vim.opt.shiftwidth = 8
 
 -- autoindent
 vim.opt.autoindent = true

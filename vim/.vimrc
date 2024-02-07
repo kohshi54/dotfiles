@@ -53,7 +53,7 @@ if has('syntax') && has('eval')
 endif
 syntax on
 " witdh of tab
-set tabstop=4 
+set tabstop=8
 set autoindent
 "create backup in ~/backup
 set backup    
