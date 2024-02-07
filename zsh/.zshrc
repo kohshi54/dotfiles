@@ -171,3 +171,5 @@ unsetopt share_history
 # git commit with vim
 export GIT_EDITOR=vim
 
+# memo
+export PATH=~/go/bin/:$PATH

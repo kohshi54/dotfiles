@@ -55,9 +55,9 @@ syntax on
 " witdh of tab
 set tabstop=8
 set autoindent
-"create backup in ~/backup
+"create backup in ~/.vim_backup
 set backup    
-set backupdir=~/backup
+set backupdir=~/.vim_backup
 "do not create undo file
 set noundofile 
 "add to clipboard when copy with y
@@ -67,6 +67,9 @@ set clipboard=unnamed,autoselect
 " ビープ音無くす
 set belloff=all
 " (は閉じ括弧も自動補完
-inoremap ( ()<Esc>i
+" inoremap ( ()<Esc>i
 " {は閉じ括弧も自動補完
 inoremap { {}<Esc>i
+
+" jjでエスケープ
+inoremap jj <ESC>

@@ -718,3 +718,6 @@ vim.api.nvim_create_autocmd("FileType", {
         end)
     end,
 })
+
+-- escape insert mode when jj is pressed
+vim.api.nvim_set_keymap('i', 'jj', '<ESC>', {noremap = true})
