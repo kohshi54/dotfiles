@@ -303,7 +303,7 @@ vim.o.mouse = 'a'
 vim.o.clipboard = 'unnamedplus'
 
 -- Enable break indent
-vim.o.breakindent = true
+-- vim.o.breakindent = true
 
 -- Save undo history
 vim.o.undofile = true
@@ -684,7 +684,7 @@ vim.opt.tabstop = 8
 vim.opt.shiftwidth = 8
 
 -- autoindent
-vim.opt.autoindent = true
+-- vim.opt.autoindent = true
 
 vim.opt.rnu = true
 -- vim.api.nvim_command("set rnu")
